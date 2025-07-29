@@ -1,0 +1,24 @@
+{
+  "name": "oracle-test-project",
+  "version": "1.0.0",
+  "description": "Test project for Oracle DB connection using oracledb 6.6.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "oracledb": "^6.9.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "oracle",
+    "database",
+    "oracledb"
+  ],
+  "author": "",
+  "type": "commonjs"
+}
