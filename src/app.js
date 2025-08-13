@@ -2,7 +2,7 @@ const oracledb = require('oracledb');
 
 // Конфигурация подключения
 const dbConfig = {
-  connectString: 'localhost:1521/XEPDB1', // или FREEPDB1 для 23c
+  connectString: 'localhost:1521/FREEPDB1', // Используем FREEPDB1 как предполагаемое имя службы
   user: 'system',
   password: 'yourpassword'
 };

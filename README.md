@@ -30,6 +30,19 @@ docker-compose up -d
 docker-composer down
 ```
 
+### Ошибка по timeout
+```bash
+ERROR: for sqlplus_oracle_1  UnixHTTPConnectionPool(host='localhost', port=None): Read timed out. (read timeout=60)
+
+ERROR: for oracle  UnixHTTPConnectionPool(host='localhost', port=None): Read timed out. (read timeout=60)
+ERROR: An HTTP request took too long to complete. Retry with --verbose to obtain debug information.
+If you encounter this issue regularly because of slow network conditions, consider setting COMPOSE_HTTP_TIMEOUT to a higher value (current value: 60).
+```
+### Решение
+```bash
+export COMPOSE_HTTP_TIMEOUT=120 && docker-compose up --build
+```
+
 ### Убедитесь, что контейнер запущен
 ```bash
 docker ps

@@ -1,11 +1,11 @@
 version: '3'
 services:
   oracle:
-    image: container-registry.oracle.com/database/express:21.3.0-xe
+    image: gvenzl/oracle-free:slim-faststart
     ports:
       - "1521:1521"
     environment:
-      ORACLE_PWD: yourpassword
+      ORACLE_PASSWORD: yourpassword
     volumes:
       - oracle_data:/opt/oracle/oradata
     # Ограничение ресурсов (опционально)
